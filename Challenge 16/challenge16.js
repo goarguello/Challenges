@@ -1,16 +1,16 @@
 let numbers = [];
 let addNumber = "";
+let numbersArray = "";
 
-addNumber = prompt('Inserta un número: ');
-if(isNaN(addNumber)){
-    alert('Solo números')
-}else{
+while ((addNumber != undefined) == true) {
+  addNumber = prompt("Inserta un número: ");
+  if (isNaN(addNumber)) {
+    alert("Ni letras, ni espacios, solo números.");
+  } else {
     numbers.push(addNumber);
+  }
 }
 
-console.log(numbers);
+numbersArray = numbers.join("");
 
-
-do {
-    
-} while (condition);
+console.log(numbersArray);
