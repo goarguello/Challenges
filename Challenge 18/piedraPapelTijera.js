@@ -8,7 +8,7 @@ let pregunta = "si";
 
 while (pregunta == "si") {
   userInput = prompt("¿Piedra, papel o tijera?").toLowerCase();
-  computerInput = Math.floor(Math.random() * 3);
+  computerInput = Math.round(Math.random() * 2);
   // Si elegiste piedra:
   if (userInput == "piedra" && computerInput == 0) {
     console.log("EMPATE");
